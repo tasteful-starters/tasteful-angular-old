@@ -5,7 +5,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
+    "serve:staging": "ng serve --env=staging",
+    "build": "ng build --aot --env=prod --prod --stats-json",
+    "build:staging": "ng build --aot --env=staging --prod --stats-json",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
