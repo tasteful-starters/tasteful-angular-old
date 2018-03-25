@@ -10,7 +10,7 @@
 
 ## 5. [Install and tastefully import Bootstrap](./steps/5.InstallAndTastefullyImportBootstrap.md)
 
-## 6. Routing
+## 6. [Routing](./steps/6.Routing.md)
 
 ## 7. Redux
 
