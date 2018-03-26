@@ -12,6 +12,6 @@
 
 ## 6. [Routing](./steps/6.Routing.md)
 
-## 7. Redux
+## 7. [Setup Redux](./steps/7.SetupRedux.md)
 
 ## 8. Todo App

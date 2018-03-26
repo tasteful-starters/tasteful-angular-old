@@ -2,9 +2,9 @@
 
 - [x] aliases
 - [x] environment variables
-- [ ] support scss & import bootstrap
-- [ ] routing
-- [ ] redux
+- [x] support scss & import bootstrap
+- [x] routing
+- [x] redux
 - [ ] style-guide
     - [ ] Adding Aliases
     - [ ] Dev and Build Commands
