@@ -4,6 +4,8 @@ import { FormsModule }   from '@angular/forms';
 
 import { TodoAppRoutingModule } from './todo-app-routing.module';
 import { TodoAppComponent } from './todo-app.component';
+import { TodoAdderComponent } from './todo-adder/todo-adder.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
 
 @NgModule({
   imports: [
@@ -11,6 +13,6 @@ import { TodoAppComponent } from './todo-app.component';
     TodoAppRoutingModule,
     FormsModule
   ],
-  declarations: [TodoAppComponent]
+  declarations: [TodoAppComponent, TodoAdderComponent, TodoListComponent]
 })
 export class TodoAppModule { }

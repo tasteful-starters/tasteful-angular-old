@@ -2,20 +2,6 @@
   todo-app works!
 </p>
 
-<form>
-  <input [(ngModel)]="newTodo" name="newTodo"/>
-  <button (click)="addTodo()" type="submit">Add Todo</button>
-</form>
+<app-todo-adder></app-todo-adder>
 
-<ul>
-  <li *ngFor="let task of (todoList$ | async); let i = index">
-    <input type="checkbox" [ngModel]="task.done" (click)="toggleTodo(i)"/>
-    {{task.name}}
-  </li>
-</ul>
-
-<hr>
-
-<h3>Debug Stuff</h3>
-
-<pre>{{todoList$ | async | json}}</pre>
+<app-todo-list></app-todo-list>
