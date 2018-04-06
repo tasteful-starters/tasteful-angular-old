@@ -1,4 +1,4 @@
-# HopeStarter
+# Tasteful Angular
 
 This is a minimalistic Angular starter with all you should need to create an easy to read and scale state of the art Angular application.
 
@@ -77,7 +77,7 @@ Take a look at `app/shared` for reference
 
 ---
 
-## Generating routes / new pages
+## Generating routes / new pages [TODO: Fix]
 
 - Create a **component / UI element* as explained above, at the level at wich you want your new route
 
