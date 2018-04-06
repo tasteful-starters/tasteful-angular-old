@@ -1,6 +1,6 @@
 <ul>
   <li *ngFor="let task of (todoList$ | async); let i = index">
     <input type="checkbox" [ngModel]="task.done" (click)="toggleTodo(i)"/>
-    {{task.name}}
+    <a routerLink="/todo/{{i}}">{{task.name}}</a>
   </li>
 </ul>
