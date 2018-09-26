@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Store, select } from '@ngrx/store';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
-import { Increment, Decrement, Load } from '@state/counter/counter.actions';
+import { Increment, Decrement } from '@state/counter/counter.actions';
 import { State } from '@state/counter/counter.state';
+
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -17,16 +18,12 @@ export class AboutComponent implements OnInit {
     this.count$ = store.pipe(select('count'));
   }
 
-  increment(){
+  increment() {
     this.store.dispatch(new Increment());
   }
 
-  decrement(){
+  decrement() {
     this.store.dispatch(new Decrement());
-  }
-
-  load(){
-    this.store.dispatch(new Load());
   }
 
   ngOnInit() {

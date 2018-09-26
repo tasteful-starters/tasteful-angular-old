@@ -3,25 +3,25 @@ import { TodoListActionTypes, TodoListActions } from './todo-list.actions';
 
 export function todoListReducer(state = initialState, action: TodoListActions): State {
     switch (action.type) {
-        case TodoListActionTypes.ADD_TODO: 
+        case TodoListActionTypes.ADD_TODO:
             return [
                 ...state, {
                     name: action.payload.name,
                     done: false
                 }
-            ]
+            ];
 
         case TodoListActionTypes.TOGGLE_TODO:
             return [...state]
-            .map((obj, i) => {
-                if (action.payload.index === i) {
-                    return {
-                        ...obj,
-                        done: action.payload.done || !obj.done
+                .map((obj, i) => {
+                    if (action.payload.index === i) {
+                        return {
+                            ...obj,
+                            done: action.payload.done || !obj.done
+                        };
                     }
-                }
-                return obj;
-            })
+                    return obj;
+                });
 
         default: {
             return state;

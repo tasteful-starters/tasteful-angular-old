@@ -7,14 +7,14 @@ export enum TodoListActionTypes {
 
 export class AddTodo implements Action {
     readonly type = TodoListActionTypes.ADD_TODO;
-    constructor(public payload: {name: String}) { }
+    constructor(public payload: { name: String }) { }
 }
 
 export class ToggleTodo implements Action {
     readonly type = TodoListActionTypes.TOGGLE_TODO;
-    constructor(public payload: {index: Number, done?: Boolean}) { }
+    constructor(public payload: { index: Number, done?: Boolean }) { }
 }
 
 export type TodoListActions
-  = AddTodo
-  | ToggleTodo;
+    = AddTodo
+    | ToggleTodo;
